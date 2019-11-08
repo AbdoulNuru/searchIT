@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AbdoulNuru/searchIT/issues"
   },
-  "homepage": "https://github.com/AbdoulNuru/searchIT#readme"
+  "homepage": "https://github.com/AbdoulNuru/searchIT#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
