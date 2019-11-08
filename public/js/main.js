@@ -77,15 +77,15 @@ const appendData = (data, x) => {
   }
 };
 //Listen to user inputs, fetch data, search through and display
-sBox.addEventListener("input", (evt)=> {
+sBox.addEventListener("input", function(evt) {
   let x = this.value;
   fetch(url)
     .then(resp => resp.json())
-    .then((data)=> {
+    .then(function(data) {
       return appendData(data, x.trimLeft());
     })
 
-    .catch((error)=> {
+    .catch(function(error) {
       console.log(error);
     });
 });
