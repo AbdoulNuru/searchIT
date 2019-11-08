@@ -1,7 +1,8 @@
 import express from 'express';
+import dotenv from 'dotenv';
 
 const app = express();
-const port = 3000;
+dotenv.config();
 
 app.set("view engine", "html");
 app.set('views', __dirname + '/views');
@@ -12,6 +13,6 @@ app.get('/', (req, res)=>{
     res.render('index');
 });
 
-app.listen(port, ()=>{
-    console.log(`SearchIt running on port ${3000}`);
+app.listen(process.env.PORT, ()=>{
+    console.log(`SearchIt running on port ${process.env.PORT}`);
 });
