@@ -1,1 +1,1 @@
-# searchIT :mag_right:
+# searchIT:mag_right:
